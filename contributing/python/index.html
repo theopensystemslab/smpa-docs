@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Hactar Code Style - Submit my Planning Application</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Hactar Code Style";
+    var mkdocs_page_input_path = "contributing/python.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Submit my Planning Application</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../schema/">Generated Schema</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Hactar Code Style</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#hactar-code-style">Hactar Code Style</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#100-character-maximum-line-length">100 character maximum line length</a></li>
+        
+            <li><a class="toctree-l3" href="#use-google-style-docstrings">Use Google style docstrings</a></li>
+        
+            <li><a class="toctree-l3" href="#use-type-hints-as-much-as-is-useful">Use type hints as much as is useful</a></li>
+        
+            <li><a class="toctree-l3" href="#service-classes">Service classes</a></li>
+        
+            <li><a class="toctree-l3" href="#the-little-things">The little things</a></li>
+        
+            <li><a class="toctree-l3" href="#class-structure">Class Structure</a></li>
+        
+            <li><a class="toctree-l3" href="#linting-with-flake8">Linting with Flake8</a></li>
+        
+            <li><a class="toctree-l3" href="#setupcfg">setup.cfg</a></li>
+        
+            <li><a class="toctree-l3" href="#imports-order">Imports order</a></li>
+        
+            <li><a class="toctree-l3" href="#pytest">Pytest</a></li>
+        
+            <li><a class="toctree-l3" href="#codacy">Codacy</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../setup/">Setup</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../screens/screens/">Screen notes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API Walkthrough</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../screens/0-screen/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/1-screen/">1. Starting the works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/2-screen/">2. About the works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/3-screen/">3. About the extension or alteration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/4-screen/">4. About the extension or alteration to the original house</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/5-screen/">5. About the Single storey extension</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/6-screen/">6. Basement works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/7-screen/">7. Roof works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/8-screen/">8. Porch works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/9-screen/">9. Balcony / Terrace works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/10-screen/">10. Staircase works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/11-screen/">11. Window / Door works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/12-screen/">12. Cladding works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/13-screen/">13. Outbuilding works</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/14-screen/">14. Outbuilding details</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/15-screen/">15. Changes to fences, gates, walls</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/16-screen/">16. Changes to fences, gates, walls - locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/17-screen/">17. About the site access - scope</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/18-screen/">18. About the vehicle / pedestrian access</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/19-screen/">19. About the vehicle / pedestrian access</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/20-screen/">20. About car parking spaces</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/21-screen/">21. About bike parking spaces</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/22-screen/">22. About electrical vehicles charging points</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/23-screen/">23. About the equipment</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/24-screen/">24. Equipment locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/25-screen/">25. Floor area</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/26-screen/">26. Additional bedrooms</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/27-screen/">27. About the trees and hedges</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/28-screen/">28. About materials</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/29-screen/">29. Specifying materials</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/30-screen/">30. Other materials options</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/31-screen/">31. Other materials</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/32-screen/">32. Document uploads</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/33-screen/">33. Declarations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/34-screen/">34. Payments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/35-screen/">35. Submitting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../screens/user/user-endpoints/">User Endpoints</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../tests/">Tests</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Submit my Planning Application</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Hactar Code Style</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://code.hactar.is/projects/hackney-planning/repositories/smpa/tree/master/docs/docs/contributing/python.md"> Edit on Codebase</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hactar-code-style">Hactar Code Style</h1>
+<p>Hactar's python code style mostly follows PEP8 with a few small additions and differences.</p>
+<h2 id="100-character-maximum-line-length">100 character maximum line length</h2>
+<p>We use a 100 character maximum line length because the standard 80 can make code harder to read instead of easier.</p>
+<h2 id="use-google-style-docstrings">Use Google style docstrings</h2>
+<p><a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html">Google style docstrings</a> are easier to read for both humans and computers.</p>
+<p><em>Pro-tip:</em> Install the <a href="https://packagecontrol.io/packages/AutoDocstring">AutoDocstring</a> SublimeText package and auto generate half your docstrings with <code>Cmd+Alt+'</code></p>
+<h2 id="use-type-hints-as-much-as-is-useful">Use type hints as much as is useful</h2>
+<p>MyPy and type hinting are extremely useful in a lot of cases, it can make it much easier to reason with your own code, let alone someone else's. Use them wherever you think it's helpful, but in cases where it simply gets in the way, try to leave appropriate comments instead.</p>
+<h2 id="service-classes">Service classes</h2>
+<p>Models in code should be little more than a python representation of your database - as much as possible keep business logic out of your models. For this reason we provide a base service class which can be subclassed for each of your models. It provides a consistent set of methods that can remain consistent even if the ORM is swapped out.</p>
+<p>If you ever find yourself writing business logic on a model, try to re-think the problem so that this logic can work on the service instead.</p>
+<h2 id="the-little-things">The little things</h2>
+<ul>
+<li>No trailing spaces</li>
+<li>Ensure line continuations are <a href="https://stackoverflow.com/a/7942617/1381789">correctly formatted</a></li>
+</ul>
+<h2 id="class-structure">Class Structure</h2>
+<p>Some frameworks have a convention of adding metadata to classes using an inner class called <code>Meta</code>, as this is often used for describing how the class should be used, place it at the top of the class definition so that other team members can find it easily.</p>
+<h4 id="example">Example</h4>
+<pre><code>class SomePageMixin(Page):
+
+    class Meta:
+        abstract = True
+    ...
+</code></pre>
+<p>It's also a good idea to keep methods and properties etc. on a class grouped. The preferred order for organising a class would be...</p>
+<ul>
+<li>Docstring</li>
+<li>Inner classes</li>
+<li>properties</li>
+<li>class methods</li>
+<li>methods</li>
+<li>defined properties (using the @property or @cached_property decorators</li>
+<li><strong>repr</strong> / <strong>str</strong> methods</li>
+</ul>
+<p>A fuller example would look something like...</p>
+<pre><code>class SomePageMixin(Page):
+
+    """This mixin adds x abilities to a Page model.
+    """
+
+    class Meta:
+        abstract = True
+
+    template = 'something.jinja'
+    some_field = models.CharField(default='Oh hai', null=True, blank=True)
+
+    @classmethod
+    def do_something(cls):
+        ...
+
+    def get_absolute_url(self):
+        return f'{}settings.BASE_URL}{self.url}'
+
+    @property
+    def foo(self):
+        return self._foo
+
+    def __str__(self):
+        return f'&lt;{self.__class__.__name__}&gt; {self.some_field}'
+</code></pre>
+<h2 id="linting-with-flake8">Linting with Flake8</h2>
+<p>We use Flake8 for linting with a few small config options such as allowing a line length of 100 characters and suppression of warnings about module level imports not being at the top of the file. For SublimeLinter 4, the settings file should look like this.</p>
+<pre><code>"linters": {
+        "flake8": {
+            "python": null,
+            "disable": false,
+            "args": [
+                "--max-complexity", "10",
+                "--max-line-length", "100",
+                "--ignore", "E402"
+            ],
+            "excludes": [],
+            "ignore": "E402",
+            "max-complexity": 10,
+            "max-line-length": 100,
+            "select": "",
+        },
+    ....
+</code></pre>
+<h4 id="complexity">Complexity</h4>
+<p>The linter settings above include a McCabe Complexity limit of 10. This provides you with a sensible level at which the linter will start suggesting that you need to refactor your code. Functions and methods that contain a lot of <code>if/else</code> blocks or a lot of <code>try/except</code> blocks will quickly hit this limit and you should probably look at how you could encapsulate these sections better.</p>
+<h4 id="noqa">NOQA</h4>
+<p>Sometimes you <em>have</em> to write a line of code that Flake8 will show a warning for. For instance, often you'll want to access key parts of a module from the top level of that module, this means importing them from their individual files into the <code>__init__.py</code> of your module. Flake8 sees this as an unused import and shows warnings. You can suppress these warnings though with <code># NOQA</code> (two spaces between the code and the comment).</p>
+<pre><code>from .snippets import SidebarBlock  # NOQA
+from .images import CustomImage  # NOQA
+</code></pre>
+<h2 id="setupcfg">setup.cfg</h2>
+<p>All our Python projects should have a setup.cfg file - this is an emerging standard for describing a project's settings across multiple tools. Our <code>setup.cfg</code> files should have sections for both <code>isort</code> and <code>pytest</code>.</p>
+<h2 id="imports-order">Imports order</h2>
+<p>Not one that we're strict about, but keeping your imports sorted nicely can make them easier to understand for other team members. Use <a href="http://isort.readthedocs.io/en/latest/">isort</a> along with the <a href="https://github.com/timothycrosley/isort/wiki/isort-Plugins">plugin for your preferred editor</a> to make this easier. The isort settings we use in our <code>setup.cfg</code> files looks like this...</p>
+<pre><code>[isort]
+line_length=100
+force_to_top=
+skip=
+known_standard_libary=std,std2
+known_third_party=django,money,hues,arrow,django_cron,wagtail*
+known_first_party=modules,helpers,assets,config,middelware
+indent='    '
+multi_line_output=5
+length_sort=True
+import_heading_stdlib=stdlib
+import_heading_firstparty=Project
+import_heading_thirdparty=3rd party
+import_heading_localfolder=Module
+lines_after_imports=2
+default_section=THIRDPARTY
+</code></pre>
+<p>You will probably want to customise the <code>known_third_party</code> and <code>known_first_party</code> lines on a per-project basis.</p>
+<h2 id="pytest">Pytest</h2>
+<p>We use <a href="https://docs.pytest.org/en/latest/">Pytest</a> for our tests. It's simply better in every way than Python's built in test classes.</p>
+<p>Try to write as many of your tests to be non-dependent on database access as possible. Not only does this make your tests run faster, it can help you refactor your code into more sensible patterns. For instance, if you have a class that performs various transformations on a piece of data before saving it to the database, refactoring this to have separate methods for each transformation and a separate save method will allow you to cleanly write very fast tests for each of the transformation steps and a single slow step for the save method. Over a whole project, these speed savings can add up to a lot.</p>
+<p>Pytest's settings can also be added to the <code>setup.cfg</code> file. A typical pytest block would look something like this...</p>
+<pre><code>[tool:pytest]
+DJANGO_SETTINGS_MODULE = config.settings.test
+python_files = tests.py test_*.py *_tests.py
+django_find_project = false
+python_paths = .
+addopts = --failed-first
+testpaths = .
+</code></pre>
+<h4 id="coverage">Coverage</h4>
+<p>Use coverage as much as possible to identify which parts of your code are untested. Side-note: django-pytest has a bug which affects coverage results, so on Django projects use coverage as a guide, but not authoritative.</p>
+<h2 id="codacy">Codacy</h2>
+<p>We use Codacy as a code-quality checking service. You'll want to limit the parts of your code that Codacy checks against, so the project should have a <code>.codacy.yaml</code> file at the root that contains a list of files and folders to ignore. This should look something like this...</p>
+<pre><code>---
+exclude_paths:
+  - docs/**/*
+  - redis/**/*
+  - data/**/*
+  - guide/**/*
+  - devops/**/*
+  - fabfile/**/*
+  - web/project/assets/_dev/js/lib/**/*
+  - web/project/assets/_dev/js/lib/*.js
+  - web/project/assets/_dev/js/lib/*
+  - web/project/assets/_dev/scss/lib/**/*
+  - web/project/assets/_dev/scss/lib/*
+  - web/project/modules/*/migrations/*.py
+  - web/project/modules/*/*/migrations/*.py
+  - web/project/assets/js/main.min.js
+  - web/project/tests/**/*
+  - web/project/tests/*.py
+  - web/project/modules/*/tests/*.py
+  - web/project/modules/*/*/tests/*.py
+  - web/project/htmlcov/**/*
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../setup/" class="btn btn-neutral float-right" title="Setup">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../setup/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
