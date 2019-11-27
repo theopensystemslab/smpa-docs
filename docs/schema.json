@@ -3,9 +3,7 @@
     "/api/v1/addresses": {
       "get": {
         "summary": "Get all Addresses from the DB",
-        "tags": [
-          "Address"
-        ],
+        "tags": ["Address"],
         "parameters": [
           {
             "in": "query",
@@ -26,9 +24,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All Addresses",
@@ -47,9 +43,7 @@
       "patch": {},
       "post": {
         "summary": "Add a new Address to the database",
-        "tags": [
-          "Address"
-        ],
+        "tags": ["Address"],
         "parameters": [
           {
             "in": "body",
@@ -200,18 +194,12 @@
                   "maxLength": 15
                 }
               },
-              "required": [
-                "postcode"
-              ]
+              "required": ["postcode"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "Address created successfully",
@@ -231,9 +219,7 @@
     "/api/v1/addresses/{id}": {
       "get": {
         "summary": "Get one or more Addresses from the database",
-        "tags": [
-          "Address"
-        ],
+        "tags": ["Address"],
         "parameters": [
           {
             "in": "path",
@@ -245,9 +231,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One or more Addresses",
@@ -265,9 +249,7 @@
       },
       "patch": {
         "summary": "Update an Address in the database",
-        "tags": [
-          "Address"
-        ],
+        "tags": ["Address"],
         "parameters": [
           {
             "in": "body",
@@ -418,18 +400,12 @@
                   "maxLength": 15
                 }
               },
-              "required": [
-                "postcode"
-              ]
+              "required": ["postcode"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated Address",
@@ -453,9 +429,7 @@
     "/api/v1/site-addresses": {
       "get": {
         "summary": "Get all SiteAddresses from the DB",
-        "tags": [
-          "Address"
-        ],
+        "tags": ["Address"],
         "parameters": [
           {
             "in": "query",
@@ -476,9 +450,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All SiteAddresses",
@@ -497,9 +469,7 @@
       "patch": {},
       "post": {
         "summary": "Add new SiteAddress to the database",
-        "tags": [
-          "SiteAddress"
-        ],
+        "tags": ["SiteAddress"],
         "parameters": [
           {
             "in": "body",
@@ -774,12 +744,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "SiteAddress created successfully",
@@ -799,9 +765,7 @@
     "/api/v1/site-addresses/{id}": {
       "get": {
         "summary": "Get one or more SiteAddresses from the database",
-        "tags": [
-          "SiteAddress"
-        ],
+        "tags": ["SiteAddress"],
         "parameters": [
           {
             "in": "path",
@@ -813,9 +777,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One or more SiteAddresses",
@@ -830,9 +792,7 @@
       },
       "patch": {
         "summary": "Update a SiteAddress in the database",
-        "tags": [
-          "SiteAddress"
-        ],
+        "tags": ["SiteAddress"],
         "parameters": [
           {
             "in": "body",
@@ -1107,12 +1067,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated SiteAddress",
@@ -1136,9 +1092,7 @@
     "/api/v1/site-areas": {
       "get": {
         "summary": "Get all SiteAreas from the DB",
-        "tags": [
-          "SiteArea"
-        ],
+        "tags": ["SiteArea"],
         "parameters": [
           {
             "in": "query",
@@ -1159,9 +1113,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All SiteAreas",
@@ -1180,9 +1132,7 @@
       "patch": {},
       "post": {
         "summary": "Add new SiteArea to the database",
-        "tags": [
-          "SiteArea"
-        ],
+        "tags": ["SiteArea"],
         "parameters": [
           {
             "in": "path",
@@ -1252,9 +1202,7 @@
                   "format": "float"
                 }
               },
-              "required": [
-                "area"
-              ]
+              "required": ["area"]
             }
           },
           {
@@ -1269,18 +1217,12 @@
                   "format": "uuid"
                 }
               },
-              "required": [
-                "unit"
-              ]
+              "required": ["unit"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "SiteArea created successfully",
@@ -1300,9 +1242,7 @@
     "/api/v1/site-areas/{id}": {
       "get": {
         "summary": "Get one SiteArea from the DB",
-        "tags": [
-          "SiteArea"
-        ],
+        "tags": ["SiteArea"],
         "parameters": [
           {
             "in": "path",
@@ -1314,9 +1254,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested SiteArea",
@@ -1331,9 +1269,7 @@
       },
       "patch": {
         "summary": "Update an SiteArea in the database",
-        "tags": [
-          "SiteArea"
-        ],
+        "tags": ["SiteArea"],
         "parameters": [
           {
             "in": "path",
@@ -1403,9 +1339,7 @@
                   "format": "float"
                 }
               },
-              "required": [
-                "area"
-              ]
+              "required": ["area"]
             }
           },
           {
@@ -1420,18 +1354,12 @@
                   "format": "uuid"
                 }
               },
-              "required": [
-                "unit"
-              ]
+              "required": ["unit"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated SiteArea",
@@ -1455,9 +1383,7 @@
     "/api/v1/site-constraints": {
       "get": {
         "summary": "Get all SiteConstraintss from the DB",
-        "tags": [
-          "SiteConstraints"
-        ],
+        "tags": ["SiteConstraints"],
         "parameters": [
           {
             "in": "query",
@@ -1478,9 +1404,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All SiteConstraintss",
@@ -1499,9 +1423,7 @@
       "patch": {},
       "post": {
         "summary": "Add new SiteConstraints to the database",
-        "tags": [
-          "SiteConstraints"
-        ],
+        "tags": ["SiteConstraints"],
         "parameters": [
           {
             "in": "body",
@@ -1737,12 +1659,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "SiteConstraints created successfully",
@@ -1762,9 +1680,7 @@
     "/api/v1/site-constraints/{id}": {
       "get": {
         "summary": "Get one SiteConstraints from the database",
-        "tags": [
-          "SiteConstraints"
-        ],
+        "tags": ["SiteConstraints"],
         "parameters": [
           {
             "in": "path",
@@ -1776,9 +1692,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One SiteConstraints",
@@ -1793,9 +1707,7 @@
       },
       "patch": {
         "summary": "Update an SiteConstraints in the database",
-        "tags": [
-          "SiteConstraints"
-        ],
+        "tags": ["SiteConstraints"],
         "parameters": [
           {
             "in": "body",
@@ -2031,12 +1943,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated SiteConstraints",
@@ -2060,9 +1968,7 @@
     "/api/v1/works-locations": {
       "get": {
         "summary": "Get all WorksLocations from the DB",
-        "tags": [
-          "WorksLocation"
-        ],
+        "tags": ["WorksLocation"],
         "parameters": [
           {
             "in": "query",
@@ -2083,9 +1989,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All WorksLocations",
@@ -2104,9 +2008,7 @@
       "patch": {},
       "post": {
         "summary": "Add new WorksLocation to the database",
-        "tags": [
-          "WorksLocation"
-        ],
+        "tags": ["WorksLocation"],
         "parameters": [
           {
             "in": "path",
@@ -2180,12 +2082,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "WorksLocation created successfully",
@@ -2205,9 +2103,7 @@
     "/api/v1/works-locations/{id}": {
       "get": {
         "summary": "Get one WorksLocation from the DB",
-        "tags": [
-          "WorksLocation"
-        ],
+        "tags": ["WorksLocation"],
         "parameters": [
           {
             "in": "path",
@@ -2219,9 +2115,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested WorksLocation",
@@ -2236,9 +2130,7 @@
       },
       "patch": {
         "summary": "Update an WorksLocation in the database",
-        "tags": [
-          "WorksLocation"
-        ],
+        "tags": ["WorksLocation"],
         "parameters": [
           {
             "in": "path",
@@ -2312,12 +2204,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated WorksLocation",
@@ -2341,9 +2229,7 @@
     "/api/v1/basement-works-types": {
       "get": {
         "summary": "Get all BasementWorksTypes from the DB",
-        "tags": [
-          "BasementWorksType"
-        ],
+        "tags": ["BasementWorksType"],
         "parameters": [
           {
             "in": "query",
@@ -2364,9 +2250,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All BasementWorksTypes",
@@ -2385,9 +2269,7 @@
       "patch": {},
       "post": {
         "summary": "Add new BasementWorksType to the database",
-        "tags": [
-          "BasementWorksType"
-        ],
+        "tags": ["BasementWorksType"],
         "parameters": [
           {
             "in": "body",
@@ -2452,12 +2334,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "BasementWorksType created successfully",
@@ -2477,9 +2355,7 @@
     "/api/v1/roof-works-types": {
       "get": {
         "summary": "Get all RoofWorksTypes from the DB",
-        "tags": [
-          "RoofWorksType"
-        ],
+        "tags": ["RoofWorksType"],
         "parameters": [
           {
             "in": "query",
@@ -2500,9 +2376,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All RoofWorksTypes",
@@ -2521,9 +2395,7 @@
       "patch": {},
       "post": {
         "summary": "Add new RoofWorksType to the database",
-        "tags": [
-          "RoofWorksType"
-        ],
+        "tags": ["RoofWorksType"],
         "parameters": [
           {
             "in": "body",
@@ -2588,12 +2460,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "RoofWorksType created successfully",
@@ -2613,9 +2481,7 @@
     "/api/v1/border-works-types": {
       "get": {
         "summary": "Get all BorderWorksTypes from the DB",
-        "tags": [
-          "BorderWorksType"
-        ],
+        "tags": ["BorderWorksType"],
         "parameters": [
           {
             "in": "query",
@@ -2636,9 +2502,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All BorderWorksTypes",
@@ -2657,9 +2521,7 @@
       "patch": {},
       "post": {
         "summary": "Add new BorderWorksType to the database",
-        "tags": [
-          "BorderWorksType"
-        ],
+        "tags": ["BorderWorksType"],
         "parameters": [
           {
             "in": "body",
@@ -2724,12 +2586,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "BorderWorksType created successfully",
@@ -2749,9 +2607,7 @@
     "/api/v1/access-works-scopes": {
       "get": {
         "summary": "Get all AccessWorksScopes from the DB",
-        "tags": [
-          "AccessWorksScope"
-        ],
+        "tags": ["AccessWorksScope"],
         "parameters": [
           {
             "in": "query",
@@ -2772,9 +2628,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All AccessWorksScopes",
@@ -2793,9 +2647,7 @@
       "patch": {},
       "post": {
         "summary": "Add new AccessWorksScope to the database",
-        "tags": [
-          "AccessWorksScope"
-        ],
+        "tags": ["AccessWorksScope"],
         "parameters": [
           {
             "in": "body",
@@ -2860,12 +2712,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "AccessWorksScope created successfully",
@@ -2885,9 +2733,7 @@
     "/api/v1/access-works-types": {
       "get": {
         "summary": "Get all AccessWorksTypes from the DB",
-        "tags": [
-          "AccessWorksType"
-        ],
+        "tags": ["AccessWorksType"],
         "parameters": [
           {
             "in": "query",
@@ -2908,9 +2754,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All AccessWorksTypes",
@@ -2929,9 +2773,7 @@
       "patch": {},
       "post": {
         "summary": "Add new AccessWorksType to the database",
-        "tags": [
-          "AccessWorksType"
-        ],
+        "tags": ["AccessWorksType"],
         "parameters": [
           {
             "in": "body",
@@ -2996,12 +2838,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "AccessWorksType created successfully",
@@ -3021,9 +2859,7 @@
     "/api/v1/parking-works-scopes": {
       "get": {
         "summary": "Get all ParkingWorksScopes from the DB",
-        "tags": [
-          "ParkingWorksScope"
-        ],
+        "tags": ["ParkingWorksScope"],
         "parameters": [
           {
             "in": "query",
@@ -3044,9 +2880,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All ParkingWorksScopes",
@@ -3065,9 +2899,7 @@
       "patch": {},
       "post": {
         "summary": "Add new ParkingWorksScope to the database",
-        "tags": [
-          "ParkingWorksScope"
-        ],
+        "tags": ["ParkingWorksScope"],
         "parameters": [
           {
             "in": "body",
@@ -3132,12 +2964,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "ParkingWorksScope created successfully",
@@ -3157,9 +2985,7 @@
     "/api/v1/equipment-works-types": {
       "get": {
         "summary": "Get all EquipmentWorksTypes from the DB",
-        "tags": [
-          "EquipmentWorksType"
-        ],
+        "tags": ["EquipmentWorksType"],
         "parameters": [
           {
             "in": "query",
@@ -3180,9 +3006,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All EquipmentWorksTypes",
@@ -3201,9 +3025,7 @@
       "patch": {},
       "post": {
         "summary": "Add new EquipmentWorksType to the database",
-        "tags": [
-          "EquipmentWorksType"
-        ],
+        "tags": ["EquipmentWorksType"],
         "parameters": [
           {
             "in": "body",
@@ -3268,12 +3090,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "EquipmentWorksType created successfully",
@@ -3293,9 +3111,7 @@
     "/api/v1/equipment-works-conservation-types": {
       "get": {
         "summary": "Get all EquipmentWorksConservationTypes from the DB",
-        "tags": [
-          "EquipmentWorksConservationType"
-        ],
+        "tags": ["EquipmentWorksConservationType"],
         "parameters": [
           {
             "in": "query",
@@ -3316,9 +3132,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All EquipmentWorksConservationTypes",
@@ -3337,9 +3151,7 @@
       "patch": {},
       "post": {
         "summary": "Add new EquipmentWorksConservationType to the database",
-        "tags": [
-          "EquipmentWorksConservationType"
-        ],
+        "tags": ["EquipmentWorksConservationType"],
         "parameters": [
           {
             "in": "body",
@@ -3404,12 +3216,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "EquipmentWorksConservationType created successfully",
@@ -3429,9 +3237,7 @@
     "/api/v1/gate-fences-walls-types": {
       "get": {
         "summary": "Get all GatesFencesWallsType from the DB",
-        "tags": [
-          "GatesFencesWallsType"
-        ],
+        "tags": ["GatesFencesWallsType"],
         "parameters": [
           {
             "in": "query",
@@ -3452,9 +3258,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All GatesFencesWallsTypes",
@@ -3473,9 +3277,7 @@
       "patch": {},
       "post": {
         "summary": "Add new GatesFencesWallsType to the database",
-        "tags": [
-          "GatesFencesWallsType"
-        ],
+        "tags": ["GatesFencesWallsType"],
         "parameters": [
           {
             "in": "body",
@@ -3540,12 +3342,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "GatesFencesWallsType created successfully",
@@ -3565,9 +3363,7 @@
     "/api/v1/materials/options/roof": {
       "get": {
         "summary": "Get all MaterialOptionRoofs from the DB",
-        "tags": [
-          "MaterialOptionRoof"
-        ],
+        "tags": ["MaterialOptionRoof"],
         "parameters": [
           {
             "in": "query",
@@ -3588,9 +3384,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialOptionRoofs",
@@ -3609,9 +3403,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialOptionRoof to the database",
-        "tags": [
-          "MaterialOptionRoof"
-        ],
+        "tags": ["MaterialOptionRoof"],
         "parameters": [
           {
             "in": "path",
@@ -3681,18 +3473,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialOptionRoof created successfully",
@@ -3712,9 +3498,7 @@
     "/api/v1/materials/options/wall": {
       "get": {
         "summary": "Get all MaterialOptionWalls from the DB",
-        "tags": [
-          "MaterialOptionWall"
-        ],
+        "tags": ["MaterialOptionWall"],
         "parameters": [
           {
             "in": "query",
@@ -3735,9 +3519,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialOptionWalls",
@@ -3756,9 +3538,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialOptionWall to the database",
-        "tags": [
-          "MaterialOptionWall"
-        ],
+        "tags": ["MaterialOptionWall"],
         "parameters": [
           {
             "in": "path",
@@ -3828,18 +3608,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialOptionWall created successfully",
@@ -3859,9 +3633,7 @@
     "/api/v1/materials/options/door": {
       "get": {
         "summary": "Get all MaterialOptionDoors from the DB",
-        "tags": [
-          "MaterialOptionDoor"
-        ],
+        "tags": ["MaterialOptionDoor"],
         "parameters": [
           {
             "in": "query",
@@ -3882,9 +3654,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialOptionDoors",
@@ -3903,9 +3673,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialOptionDoor to the database",
-        "tags": [
-          "MaterialOptionDoor"
-        ],
+        "tags": ["MaterialOptionDoor"],
         "parameters": [
           {
             "in": "path",
@@ -3975,18 +3743,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialOptionDoor created successfully",
@@ -4006,9 +3768,7 @@
     "/api/v1/materials/options/window": {
       "get": {
         "summary": "Get all MaterialOptionWindows from the DB",
-        "tags": [
-          "MaterialOptionWindow"
-        ],
+        "tags": ["MaterialOptionWindow"],
         "parameters": [
           {
             "in": "query",
@@ -4029,9 +3789,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialOptionWindows",
@@ -4050,9 +3808,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialOptionWindow to the database",
-        "tags": [
-          "MaterialOptionWindow"
-        ],
+        "tags": ["MaterialOptionWindow"],
         "parameters": [
           {
             "in": "path",
@@ -4122,18 +3878,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialOptionWindow created successfully",
@@ -4153,9 +3903,7 @@
     "/api/v1/materials/roof": {
       "get": {
         "summary": "Get all MaterialRoofs from the DB",
-        "tags": [
-          "MaterialRoof"
-        ],
+        "tags": ["MaterialRoof"],
         "parameters": [
           {
             "in": "query",
@@ -4176,9 +3924,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialRoofs",
@@ -4197,9 +3943,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialRoof to the database",
-        "tags": [
-          "MaterialRoof"
-        ],
+        "tags": ["MaterialRoof"],
         "parameters": [
           {
             "in": "path",
@@ -4268,9 +4012,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -4284,9 +4026,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -4308,12 +4048,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialRoof created successfully",
@@ -4333,9 +4069,7 @@
     "/api/v1/materials/roof/{id}": {
       "get": {
         "summary": "Get one MaterialRoof from the DB",
-        "tags": [
-          "MaterialRoof"
-        ],
+        "tags": ["MaterialRoof"],
         "parameters": [
           {
             "in": "path",
@@ -4347,9 +4081,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested MaterialRoof",
@@ -4364,9 +4096,7 @@
       },
       "patch": {
         "summary": "Update an MaterialRoof in the database",
-        "tags": [
-          "MaterialRoof"
-        ],
+        "tags": ["MaterialRoof"],
         "parameters": [
           {
             "in": "path",
@@ -4435,9 +4165,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -4451,9 +4179,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -4475,12 +4201,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated MaterialRoof",
@@ -4504,9 +4226,7 @@
     "/api/v1/materials/wall": {
       "get": {
         "summary": "Get all MaterialWalls from the DB",
-        "tags": [
-          "MaterialWall"
-        ],
+        "tags": ["MaterialWall"],
         "parameters": [
           {
             "in": "query",
@@ -4527,9 +4247,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialWalls",
@@ -4548,9 +4266,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialWall to the database",
-        "tags": [
-          "MaterialWall"
-        ],
+        "tags": ["MaterialWall"],
         "parameters": [
           {
             "in": "path",
@@ -4619,9 +4335,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -4635,9 +4349,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -4659,12 +4371,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialWall created successfully",
@@ -4684,9 +4392,7 @@
     "/api/v1/materials/wall/{id}": {
       "get": {
         "summary": "Get one MaterialWall from the DB",
-        "tags": [
-          "MaterialWall"
-        ],
+        "tags": ["MaterialWall"],
         "parameters": [
           {
             "in": "path",
@@ -4698,9 +4404,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested MaterialWall",
@@ -4715,9 +4419,7 @@
       },
       "patch": {
         "summary": "Update an MaterialWall in the database",
-        "tags": [
-          "MaterialWall"
-        ],
+        "tags": ["MaterialWall"],
         "parameters": [
           {
             "in": "path",
@@ -4786,9 +4488,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -4802,9 +4502,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -4826,12 +4524,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated MaterialWall",
@@ -4855,9 +4549,7 @@
     "/api/v1/materials/wind": {
       "get": {
         "summary": "Get all MaterialWindows from the DB",
-        "tags": [
-          "MaterialWindow"
-        ],
+        "tags": ["MaterialWindow"],
         "parameters": [
           {
             "in": "query",
@@ -4878,9 +4570,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialWindows",
@@ -4899,9 +4589,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialWindow to the database",
-        "tags": [
-          "MaterialWindow"
-        ],
+        "tags": ["MaterialWindow"],
         "parameters": [
           {
             "in": "path",
@@ -4970,9 +4658,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -4986,9 +4672,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -5010,12 +4694,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialWindow created successfully",
@@ -5035,9 +4715,7 @@
     "/api/v1/materials/wind/{id}": {
       "get": {
         "summary": "Get one MaterialWindow from the DB",
-        "tags": [
-          "MaterialWindow"
-        ],
+        "tags": ["MaterialWindow"],
         "parameters": [
           {
             "in": "path",
@@ -5049,9 +4727,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested MaterialWindow",
@@ -5066,9 +4742,7 @@
       },
       "patch": {
         "summary": "Update an MaterialWindow in the database",
-        "tags": [
-          "MaterialWindow"
-        ],
+        "tags": ["MaterialWindow"],
         "parameters": [
           {
             "in": "path",
@@ -5137,9 +4811,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -5153,9 +4825,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -5177,12 +4847,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated MaterialWindow",
@@ -5206,9 +4872,7 @@
     "/api/v1/materials/door": {
       "get": {
         "summary": "Get all MaterialDoors from the DB",
-        "tags": [
-          "MaterialDoor"
-        ],
+        "tags": ["MaterialDoor"],
         "parameters": [
           {
             "in": "query",
@@ -5229,9 +4893,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All MaterialDoors",
@@ -5250,9 +4912,7 @@
       "patch": {},
       "post": {
         "summary": "Add new MaterialDoor to the database",
-        "tags": [
-          "MaterialDoor"
-        ],
+        "tags": ["MaterialDoor"],
         "parameters": [
           {
             "in": "path",
@@ -5321,9 +4981,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -5337,9 +4995,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -5361,12 +5017,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "MaterialDoor created successfully",
@@ -5386,9 +5038,7 @@
     "/api/v1/materials/door/{id}": {
       "get": {
         "summary": "Get one MaterialDoor from the DB",
-        "tags": [
-          "MaterialDoor"
-        ],
+        "tags": ["MaterialDoor"],
         "parameters": [
           {
             "in": "path",
@@ -5400,9 +5050,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested MaterialDoor",
@@ -5417,9 +5065,7 @@
       },
       "patch": {
         "summary": "Update an MaterialDoor in the database",
-        "tags": [
-          "MaterialDoor"
-        ],
+        "tags": ["MaterialDoor"],
         "parameters": [
           {
             "in": "path",
@@ -5488,9 +5134,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "colour_and_type"
-              ]
+              "required": ["colour_and_type"]
             }
           },
           {
@@ -5504,9 +5148,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "material_id"
-              ]
+              "required": ["material_id"]
             }
           },
           {
@@ -5528,12 +5170,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated MaterialDoor",
@@ -5557,9 +5195,7 @@
     "/api/v1/area-units/{id}": {
       "get": {
         "summary": "Get one AreaUnit from the DB",
-        "tags": [
-          "AreaUnit"
-        ],
+        "tags": ["AreaUnit"],
         "parameters": [
           {
             "in": "path",
@@ -5571,9 +5207,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested AreaUnit",
@@ -5588,9 +5222,7 @@
       },
       "patch": {
         "summary": "Update an AreaUnit in the database",
-        "tags": [
-          "AreaUnit"
-        ],
+        "tags": ["AreaUnit"],
         "parameters": [
           {
             "in": "path",
@@ -5660,18 +5292,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated AreaUnit",
@@ -5692,9 +5318,7 @@
       },
       "post": {
         "summary": "Add new AreaUnit to the database",
-        "tags": [
-          "AreaUnit"
-        ],
+        "tags": ["AreaUnit"],
         "parameters": [
           {
             "in": "path",
@@ -5764,18 +5388,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "AreaUnit created successfully",
@@ -5795,9 +5413,7 @@
     "/api/v1/area-units": {
       "get": {
         "summary": "Get all AreaUnits from the DB",
-        "tags": [
-          "AreaUnit"
-        ],
+        "tags": ["AreaUnit"],
         "parameters": [
           {
             "in": "query",
@@ -5818,9 +5434,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All AreaUnits",
@@ -5842,9 +5456,7 @@
     "/api/v1/linear-units": {
       "get": {
         "summary": "Get all LinearUnits from the DB",
-        "tags": [
-          "LinearUnit"
-        ],
+        "tags": ["LinearUnit"],
         "parameters": [
           {
             "in": "query",
@@ -5865,9 +5477,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All LinearUnits",
@@ -5889,9 +5499,7 @@
     "/api/v1/linear-units/{id}": {
       "get": {
         "summary": "Get one LinearUnit from the database",
-        "tags": [
-          "LinearUnit"
-        ],
+        "tags": ["LinearUnit"],
         "parameters": [
           {
             "in": "path",
@@ -5903,9 +5511,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One LinearUnit",
@@ -5920,9 +5526,7 @@
       },
       "patch": {
         "summary": "Update an LinearUnit in the database",
-        "tags": [
-          "LinearUnit"
-        ],
+        "tags": ["LinearUnit"],
         "parameters": [
           {
             "in": "body",
@@ -5983,18 +5587,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated LinearUnit",
@@ -6015,9 +5613,7 @@
       },
       "post": {
         "summary": "Add new LinearUnit to the database",
-        "tags": [
-          "LinearUnit"
-        ],
+        "tags": ["LinearUnit"],
         "parameters": [
           {
             "in": "body",
@@ -6078,18 +5674,12 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "LinearUnit created successfully",
@@ -6109,9 +5699,7 @@
     "/api/v1/users/{id}": {
       "get": {
         "summary": "Get one or more Users from the database",
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "in": "path",
@@ -6123,9 +5711,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One or more Users",
@@ -6143,9 +5729,7 @@
       },
       "patch": {
         "summary": "Update a User in the database",
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "in": "body",
@@ -6206,9 +5790,7 @@
                   "maxLength": 200
                 }
               },
-              "required": [
-                "email"
-              ]
+              "required": ["email"]
             }
           },
           {
@@ -6223,9 +5805,7 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "password"
-              ]
+              "required": ["password"]
             }
           },
           {
@@ -6239,9 +5819,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "profile_id"
-              ]
+              "required": ["profile_id"]
             }
           },
           {
@@ -6255,9 +5833,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "role_id"
-              ]
+              "required": ["role_id"]
             }
           },
           {
@@ -6297,12 +5873,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated User",
@@ -6323,9 +5895,7 @@
       },
       "post": {
         "summary": "Add new User to the database",
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "in": "body",
@@ -6386,9 +5956,7 @@
                   "maxLength": 200
                 }
               },
-              "required": [
-                "email"
-              ]
+              "required": ["email"]
             }
           },
           {
@@ -6403,9 +5971,7 @@
                   "maxLength": 100
                 }
               },
-              "required": [
-                "password"
-              ]
+              "required": ["password"]
             }
           },
           {
@@ -6419,9 +5985,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "profile_id"
-              ]
+              "required": ["profile_id"]
             }
           },
           {
@@ -6435,9 +5999,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "role_id"
-              ]
+              "required": ["role_id"]
             }
           },
           {
@@ -6477,12 +6039,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "User created successfully",
@@ -6502,9 +6060,7 @@
     "/api/v1/agents/{id}": {
       "get": {
         "summary": "Get one or more Agents from the database",
-        "tags": [
-          "Agent"
-        ],
+        "tags": ["Agent"],
         "parameters": [
           {
             "in": "path",
@@ -6516,9 +6072,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One or more Agents",
@@ -6536,9 +6090,7 @@
       },
       "patch": {
         "summary": "Update an Agent in the database",
-        "tags": [
-          "Agent"
-        ],
+        "tags": ["Agent"],
         "parameters": [
           {
             "in": "body",
@@ -6671,12 +6223,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated Agent",
@@ -6697,9 +6245,7 @@
       },
       "post": {
         "summary": "Add new Agent to the database",
-        "tags": [
-          "Agent"
-        ],
+        "tags": ["Agent"],
         "parameters": [
           {
             "in": "body",
@@ -6832,12 +6378,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "Agent created successfully",
@@ -6857,9 +6399,7 @@
     "/api/v1/document-sizes/{id}": {
       "get": {
         "summary": "Get one or more DocumentSizes from the database",
-        "tags": [
-          "DocumentSize"
-        ],
+        "tags": ["DocumentSize"],
         "parameters": [
           {
             "in": "path",
@@ -6871,9 +6411,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "One or more DocumentSizes",
@@ -6891,9 +6429,7 @@
       },
       "patch": {
         "summary": "Update a DocumentSize in the database",
-        "tags": [
-          "DocumentSize"
-        ],
+        "tags": ["DocumentSize"],
         "parameters": [
           {
             "in": "body",
@@ -6954,18 +6490,12 @@
                   "maxLength": 20
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated DocumentSize",
@@ -6986,9 +6516,7 @@
       },
       "post": {
         "summary": "Add new DocumentSize to the database",
-        "tags": [
-          "DocumentSize"
-        ],
+        "tags": ["DocumentSize"],
         "parameters": [
           {
             "in": "body",
@@ -7049,18 +6577,12 @@
                   "maxLength": 20
                 }
               },
-              "required": [
-                "name"
-              ]
+              "required": ["name"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "DocumentSize created successfully",
@@ -7080,9 +6602,7 @@
     "/api/v1/auth": {
       "post": {
         "summary": "Login into user account and generate JWT",
-        "tags": [
-          "Login"
-        ],
+        "tags": ["Login"],
         "parameters": [
           {
             "in": "body",
@@ -7095,9 +6615,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "email"
-              ]
+              "required": ["email"]
             }
           },
           {
@@ -7111,18 +6629,12 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "password"
-              ]
+              "required": ["password"]
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Login Successful",
@@ -7150,9 +6662,7 @@
     "/api/v1/applications": {
       "get": {
         "summary": "Get all Applications from the DB",
-        "tags": [
-          "Application"
-        ],
+        "tags": ["Application"],
         "parameters": [
           {
             "in": "query",
@@ -7173,9 +6683,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "All Applications",
@@ -7194,9 +6702,7 @@
       "patch": {},
       "post": {
         "summary": "Add new Application to the database",
-        "tags": [
-          "Application"
-        ],
+        "tags": ["Application"],
         "parameters": [
           {
             "in": "path",
@@ -7339,9 +6845,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "owner_id"
-              ]
+              "required": ["owner_id"]
             }
           },
           {
@@ -7435,12 +6939,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "Application created successfully",
@@ -7460,9 +6960,7 @@
     "/api/v1/applications/{id}": {
       "get": {
         "summary": "Get one Application from the DB",
-        "tags": [
-          "Application"
-        ],
+        "tags": ["Application"],
         "parameters": [
           {
             "in": "path",
@@ -7474,9 +6972,7 @@
             }
           }
         ],
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "The requested Application",
@@ -7491,9 +6987,7 @@
       },
       "patch": {
         "summary": "Update an Application in the database",
-        "tags": [
-          "Application"
-        ],
+        "tags": ["Application"],
         "parameters": [
           {
             "in": "path",
@@ -7636,9 +7130,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "owner_id"
-              ]
+              "required": ["owner_id"]
             }
           },
           {
@@ -7732,12 +7224,8 @@
             }
           }
         ],
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Returns updated Application",
@@ -7763,7 +7251,7 @@
     "title": "Submit my Planning Application",
     "version": "1.0.0"
   },
-  "openapi": "3.0",
+  "openapi": "3.0.0",
   "components": {
     "schemas": {
       "SiteArea": {
@@ -7795,10 +7283,7 @@
             "format": "uuid"
           }
         },
-        "required": [
-          "area",
-          "unit"
-        ]
+        "required": ["area", "unit"]
       },
       "SiteConstraints": {
         "type": "object",
@@ -7903,9 +7388,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "LinearUnit": {
         "type": "object",
@@ -7932,9 +7415,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "Role": {
         "type": "object",
@@ -7961,9 +7442,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "PersonName": {
         "type": "object",
@@ -7998,11 +7477,7 @@
             "maxLength": 255
           }
         },
-        "required": [
-          "family_name",
-          "given_name",
-          "title"
-        ]
+        "required": ["family_name", "given_name", "title"]
       },
       "ContactMethod": {
         "type": "object",
@@ -8029,9 +7504,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "Email": {
         "type": "object",
@@ -8063,9 +7536,7 @@
             "nullable": true
           }
         },
-        "required": [
-          "email_address"
-        ]
+        "required": ["email_address"]
       },
       "UserProfile": {
         "type": "object",
@@ -8157,9 +7628,7 @@
             "nullable": true
           }
         },
-        "required": [
-          "tel_number"
-        ]
+        "required": ["tel_number"]
       },
       "TelephoneNumberType": {
         "type": "object",
@@ -8186,9 +7655,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "Applicant": {
         "type": "object",
@@ -8351,12 +7818,7 @@
             ]
           }
         },
-        "required": [
-          "email",
-          "password",
-          "profile_id",
-          "role_id"
-        ]
+        "required": ["email", "password", "profile_id", "role_id"]
       },
       "WorksLocation": {
         "type": "object",
@@ -8665,9 +8127,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseSingleStoreyExtension": {
         "type": "object",
@@ -8706,9 +8166,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseTwoStoreyExtension": {
         "type": "object",
@@ -8747,9 +8205,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHousePartSinglePartTwoStoreyExtension": {
         "type": "object",
@@ -8788,9 +8244,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseBasement": {
         "type": "object",
@@ -8845,10 +8299,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids",
-          "works_type_ids"
-        ]
+        "required": ["works_location_ids", "works_type_ids"]
       },
       "ExtensionOriginalHouseRoof": {
         "type": "object",
@@ -8903,10 +8354,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids",
-          "works_type_ids"
-        ]
+        "required": ["works_location_ids", "works_type_ids"]
       },
       "ExtensionOutbuilding": {
         "type": "object",
@@ -8945,9 +8393,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHousePorch": {
         "type": "object",
@@ -8986,9 +8432,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseBalconyTerrace": {
         "type": "object",
@@ -9027,9 +8471,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseStaircase": {
         "type": "object",
@@ -9068,9 +8510,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseWindowsDoors": {
         "type": "object",
@@ -9109,9 +8549,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionOriginalHouseCladding": {
         "type": "object",
@@ -9150,9 +8588,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids"
-        ]
+        "required": ["works_location_ids"]
       },
       "ExtensionBoundaraiesGatesFencesWalls": {
         "type": "object",
@@ -9207,10 +8643,7 @@
             }
           }
         },
-        "required": [
-          "works_location_ids",
-          "works_type_ids"
-        ]
+        "required": ["works_location_ids", "works_type_ids"]
       },
       "Work": {
         "type": "object",
@@ -9420,9 +8853,7 @@
             }
           }
         },
-        "required": [
-          "border_works_type_ids"
-        ]
+        "required": ["border_works_type_ids"]
       },
       "WorkExtensionMeansOfAccess": {
         "type": "object",
@@ -9472,10 +8903,7 @@
             }
           }
         },
-        "required": [
-          "access_works_scope_id",
-          "access_works_sub_type_ids"
-        ]
+        "required": ["access_works_scope_id", "access_works_sub_type_ids"]
       },
       "WorkExtensionParking": {
         "type": "object",
@@ -9539,9 +8967,7 @@
             "nullable": true
           }
         },
-        "required": [
-          "parking_works_scope_id"
-        ]
+        "required": ["parking_works_scope_id"]
       },
       "WorkEquipmentLocation": {
         "type": "object",
@@ -9591,10 +9017,7 @@
             ]
           }
         },
-        "required": [
-          "equipment_type_id",
-          "location_ids"
-        ]
+        "required": ["equipment_type_id", "location_ids"]
       },
       "WorkEquipmentConservationLocation": {
         "type": "object",
@@ -9639,10 +9062,7 @@
             ]
           }
         },
-        "required": [
-          "equipment_type_id",
-          "location_id"
-        ]
+        "required": ["equipment_type_id", "location_id"]
       },
       "WorkEquipment": {
         "type": "object",
@@ -9721,10 +9141,7 @@
             }
           }
         },
-        "required": [
-          "equipment_conservation_type_ids",
-          "equipment_type_ids"
-        ]
+        "required": ["equipment_conservation_type_ids", "equipment_type_ids"]
       },
       "WorkTrees": {
         "type": "object",
@@ -9885,9 +9302,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "MaterialRoof": {
         "type": "object",
@@ -9924,10 +9339,7 @@
             ]
           }
         },
-        "required": [
-          "colour_and_type",
-          "material_id"
-        ]
+        "required": ["colour_and_type", "material_id"]
       },
       "MaterialProposalRoof": {
         "type": "object",
@@ -10301,10 +9713,7 @@
             ]
           }
         },
-        "required": [
-          "additional_floor_area_units_id",
-          "owner_id"
-        ]
+        "required": ["additional_floor_area_units_id", "owner_id"]
       },
       "ProposalEquipment": {
         "type": "object",
@@ -10351,9 +9760,7 @@
             ]
           }
         },
-        "required": [
-          "owner_id"
-        ]
+        "required": ["owner_id"]
       },
       "Application": {
         "type": "object",
@@ -10443,9 +9850,7 @@
             ]
           }
         },
-        "required": [
-          "owner_id"
-        ]
+        "required": ["owner_id"]
       },
       "Address": {
         "type": "object",
@@ -10502,9 +9907,7 @@
             "maxLength": 15
           }
         },
-        "required": [
-          "postcode"
-        ]
+        "required": ["postcode"]
       },
       "Article4Direction": {
         "type": "object",
@@ -10657,9 +10060,7 @@
             "format": "uuid"
           }
         },
-        "required": [
-          "international_address_id"
-        ]
+        "required": ["international_address_id"]
       },
       "DocumentSize": {
         "type": "object",
@@ -10686,9 +10087,7 @@
             "maxLength": 20
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "MaterialOption": {
         "type": "object",
@@ -10715,9 +10114,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "MaterialOptionWall": {
         "type": "object",
@@ -10744,9 +10141,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "MaterialOptionWindow": {
         "type": "object",
@@ -10773,9 +10168,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "MaterialOptionDoor": {
         "type": "object",
@@ -10802,9 +10195,7 @@
             "maxLength": 100
           }
         },
-        "required": [
-          "name"
-        ]
+        "required": ["name"]
       },
       "BaseExistingMaterial": {
         "type": "object",
@@ -10833,10 +10224,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "colour_and_type",
-          "name"
-        ]
+        "required": ["colour_and_type", "name"]
       },
       "BaseMaterial": {
         "type": "object",
@@ -10862,9 +10250,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "colour_and_type"
-        ]
+        "required": ["colour_and_type"]
       },
       "MaterialWall": {
         "type": "object",
@@ -10901,10 +10287,7 @@
             ]
           }
         },
-        "required": [
-          "colour_and_type",
-          "material_id"
-        ]
+        "required": ["colour_and_type", "material_id"]
       },
       "MaterialWindow": {
         "type": "object",
@@ -10941,10 +10324,7 @@
             ]
           }
         },
-        "required": [
-          "colour_and_type",
-          "material_id"
-        ]
+        "required": ["colour_and_type", "material_id"]
       },
       "MaterialDoor": {
         "type": "object",
@@ -10981,10 +10361,7 @@
             ]
           }
         },
-        "required": [
-          "colour_and_type",
-          "material_id"
-        ]
+        "required": ["colour_and_type", "material_id"]
       },
       "OtherMaterial": {
         "type": "object",
@@ -11010,9 +10387,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "description"
-        ]
+        "required": ["description"]
       },
       "ExternalBuildingMaterial": {
         "type": "object",
@@ -11044,11 +10419,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "colour_and_type",
-          "element",
-          "proposed_material"
-        ]
+        "required": ["colour_and_type", "element", "proposed_material"]
       },
       "WorksProposal": {
         "type": "object",
